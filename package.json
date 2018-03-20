@@ -1,6 +1,6 @@
 {
   "name": "ngjs-addressinput",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Address input directive, with autocomplete and validation, for angularjs, based on google places autocomplete.",
   "main": "index.js",
   "readme": "README.md",
