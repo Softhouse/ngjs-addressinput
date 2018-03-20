@@ -24,19 +24,19 @@ NOTE: This module is heavily based on the [ng-autocomplete](https://github.com/w
 ### Usage
 The module is simple to use but has some options
     
-    ```
-    <input type="text"
-      class="form-control"
-      details="vm.details"
-      address-input
-      options="vm.options"
-      ng-model="vm.model" />
-      
-    <label 
-    	class="input-error-message"
-    	ng-show="vm.showError">{{ vm.errorMsg }}
-    </label>
-    ```
+```
+<input type="text"
+  class="form-control"
+  details="vm.details"
+  address-input
+  options="vm.options"
+  ng-model="vm.model" />
+
+<label 
+  class="input-error-message"
+  ng-show="vm.showError">{{ vm.errorMsg }}
+</label>
+```
 
 
 * **details**: The ref pointing to where to store the details fetched by the places search.
