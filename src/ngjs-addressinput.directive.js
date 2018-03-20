@@ -94,8 +94,8 @@
         // Select first address on enter in input
         element.on('keydown', function(e) {
           if (e.keyCode == 13) {
-            google.maps.event.trigger(input, 'keydown', { keyCode: 40 });
-            google.maps.event.trigger(input, 'keydown', { keyCode: 13 });
+            google.maps.event.trigger(gPlace, 'keydown', { keyCode: 40 });
+            google.maps.event.trigger(gPlace, 'keydown', { keyCode: 13 });
           }
         });
 
