@@ -7,24 +7,24 @@ NOTE: This module is heavily based on the [ng-autocomplete](https://github.com/w
 1. Setup a google places api key and add to your project.
 2. Install the package
 
-    ````
+    ```
     npm i ngjs-addressinput --save 
-    ````
+    ```
 
 3. Include the library file
 
-    ````
+    ```
     node_modules/ngjs-addressinput/dist/ngjs-addressinput.js  
-    ````
+    ```
 4. Include the library module
     
-    ````
+    ```
     angular.module('app',[..., ngjsAddressInput])
-    ````
+    ```
 ### Usage
 The module is simple to use but has some options
     
-    ````
+    ```
     <input type="text"
       class="form-control"
       details="vm.details"
@@ -36,7 +36,7 @@ The module is simple to use but has some options
     	class="input-error-message"
     	ng-show="vm.showError">{{ vm.errorMsg }}
     </label>
-    ````
+    ```
 
 
 * **details**: The ref pointing to where to store the details fetched by the places search.
