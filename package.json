@@ -1,0 +1,17 @@
+{
+  "name": "validated-addressinput",
+  "version": "0.0.1",
+  "description": "Address input with validation, based on google places autocomplete.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "address",
+    "addressinput",
+    "validation",
+    "autocomplete"
+  ],
+  "author": "Rasmus Letterkrantz",
+  "license": "ISC"
+}
