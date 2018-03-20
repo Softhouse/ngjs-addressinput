@@ -48,19 +48,19 @@ The module is simple to use but has some options
 
 The options object contains callback hooks and bounds for limiting and acting on the search events. Ex:
 
+```
+const SW = new google.maps.LatLng(59.263762, 17.886814);
+const NE = new google.maps.LatLng(59.23078, 18.15088);
 
-        const SW = new google.maps.LatLng(59.263762, 17.886814);
-        const NE = new google.maps.LatLng(59.23078, 18.15088);
-        
-        vm.options = {
-          country: 'se',
-          bounds: new google.maps.LatLngBounds(SW, NE),
-          types: ['address'],
-          validateDetails: isValidDetails,
-          convertDetails: getLocation,
-          onValidDetails: vm.onValidDetails
-        }
-
+vm.options = {
+  country: 'se',
+  bounds: new google.maps.LatLngBounds(SW, NE),
+  types: ['address'],
+  validateDetails: isValidDetails,
+  convertDetails: getLocation,
+  onValidDetails: vm.onValidDetails
+}
+```
 
 * **country**: The country param for the google places api.
 * **bounds**: The latlng bounds of the search.
