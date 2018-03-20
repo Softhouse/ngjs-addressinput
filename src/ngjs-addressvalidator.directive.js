@@ -2,7 +2,7 @@
 
 (function(){
 
-  angular.module('ngjsAddressinput')
+  angular.module('ngjsAddressInput')
     .directive('addressValidator', addressValidator);
 
   function addressValidator($q, $timeout) {

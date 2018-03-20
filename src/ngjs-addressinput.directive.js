@@ -34,7 +34,7 @@
 (function() {
 
   angular
-    .module('ngjsAddressinput')
+    .module('ngjsAddressInput')
     .directive('addressInput', AddressInput);
 
 
