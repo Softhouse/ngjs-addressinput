@@ -105,7 +105,7 @@
         function onPlaceChanged(gPlace) {
           const result = gPlace.getPlace();
           if(!!result && !!result.address_components) return applyDetails(result);
-          if(vm.options.watchEnter) return getPlace(result);
+          if(vm.options.watchEnter) return getPlace(result, vm.options);
         }
 
         /*

@@ -119,7 +119,7 @@ var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = [
       function onPlaceChanged(gPlace) {
         var result = gPlace.getPlace();
         if (!!result && !!result.address_components) return applyDetails(result);
-        if (vm.options.watchEnter) return getPlace(result);
+        if (vm.options.watchEnter) return getPlace(result, vm.options);
       }
 
       /*
