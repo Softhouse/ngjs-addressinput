@@ -67,4 +67,4 @@ vm.options = {
 * **types**: The types of the returned results
 * **validateDetails**: A function for validation the details returned by the places search. The function only takes one param; the new details object/list.
 * **convertDetails** A function for converting the details once validated. The function takes two params; the old details and the new ones.
-* **onValidDetails** Event function to be called if the returned details are considered valid by the validateDetails function.
+* **onValidDetails** Event function to be called if the returned details are considered valid by the validateDetails function. The function takes 4 params: The new details, the old details, the new address and the old Address
