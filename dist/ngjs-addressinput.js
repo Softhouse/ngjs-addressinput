@@ -59,6 +59,8 @@ var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = [
     function Controller($scope) {
       var vm = $scope.vm;
       vm.createOptions = createOptions;
+      vm.oldDetails = undefined;
+      vm.oldAddress = undefined;
 
       function createOptions(specifiedOpts) {
         var options = specifiedOpts || {};
@@ -170,7 +172,9 @@ var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = [
             ngModel.$setViewValue(details.formatted_address);
             element.val(details.formatted_address);
             vm.details = vm.options.convertDetails(angular.copy(details), angular.copy(vm.details));
-            vm.options.onValidDetails(vm.details);
+            vm.options.onValidDetails(vm.details, vm.oldDetails, ngModel.$viewValue, vm.oldAddress);
+            vm.oldDetails = angular.copy(vm.details);
+            vm.oldAddress = angular.copy(ngModel.$viewValue);
             ngModel.$setValidity('invalidAddress', true);
           });
         } else {
